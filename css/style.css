@@ -5020,17 +5020,7 @@ nav ul > li > a {
     width: 25%;
   }
 }
-.project .btn {
-  margin: 3px auto;
-  display: block;
-  width: 100%;
-}
-.project-screenshot {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-.project-live-link {
+.project .project-live-link {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -5052,94 +5042,102 @@ nav ul > li > a {
   color: #ffffff;
   background-color: #2c3e50;
   border-color: #2c3e50;
+  margin: 3px auto;
+  display: block;
+  width: 100%;
 }
-.project-live-link:focus,
-.project-live-link:active:focus,
-.project-live-link.active:focus,
-.project-live-link.focus,
-.project-live-link:active.focus,
-.project-live-link.active.focus {
+.project .project-live-link:focus,
+.project .project-live-link:active:focus,
+.project .project-live-link.active:focus,
+.project .project-live-link.focus,
+.project .project-live-link:active.focus,
+.project .project-live-link.active.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.project-live-link:hover,
-.project-live-link:focus,
-.project-live-link.focus {
+.project .project-live-link:hover,
+.project .project-live-link:focus,
+.project .project-live-link.focus {
   color: #ffffff;
   text-decoration: none;
 }
-.project-live-link:active,
-.project-live-link.active {
+.project .project-live-link:active,
+.project .project-live-link.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.project-live-link.disabled,
-.project-live-link[disabled],
-fieldset[disabled] .project-live-link {
+.project .project-live-link.disabled,
+.project .project-live-link[disabled],
+fieldset[disabled] .project .project-live-link {
   cursor: not-allowed;
   opacity: 0.65;
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-a.project-live-link.disabled,
-fieldset[disabled] a.project-live-link {
+a.project .project-live-link.disabled,
+fieldset[disabled] a.project .project-live-link {
   pointer-events: none;
 }
-.project-live-link:focus,
-.project-live-link.focus {
+.project .project-live-link:focus,
+.project .project-live-link.focus {
   color: #ffffff;
   background-color: #1a242f;
   border-color: #000000;
 }
-.project-live-link:hover {
+.project .project-live-link:hover {
   color: #ffffff;
   background-color: #1a242f;
   border-color: #161f29;
 }
-.project-live-link:active,
-.project-live-link.active,
-.open > .dropdown-toggle.project-live-link {
+.project .project-live-link:active,
+.project .project-live-link.active,
+.open > .dropdown-toggle.project .project-live-link {
   color: #ffffff;
   background-color: #1a242f;
   border-color: #161f29;
 }
-.project-live-link:active:hover,
-.project-live-link.active:hover,
-.open > .dropdown-toggle.project-live-link:hover,
-.project-live-link:active:focus,
-.project-live-link.active:focus,
-.open > .dropdown-toggle.project-live-link:focus,
-.project-live-link:active.focus,
-.project-live-link.active.focus,
-.open > .dropdown-toggle.project-live-link.focus {
+.project .project-live-link:active:hover,
+.project .project-live-link.active:hover,
+.open > .dropdown-toggle.project .project-live-link:hover,
+.project .project-live-link:active:focus,
+.project .project-live-link.active:focus,
+.open > .dropdown-toggle.project .project-live-link:focus,
+.project .project-live-link:active.focus,
+.project .project-live-link.active.focus,
+.open > .dropdown-toggle.project .project-live-link.focus {
   color: #ffffff;
   background-color: #0d1318;
   border-color: #000000;
 }
-.project-live-link:active,
-.project-live-link.active,
-.open > .dropdown-toggle.project-live-link {
+.project .project-live-link:active,
+.project .project-live-link.active,
+.open > .dropdown-toggle.project .project-live-link {
   background-image: none;
 }
-.project-live-link.disabled:hover,
-.project-live-link[disabled]:hover,
-fieldset[disabled] .project-live-link:hover,
-.project-live-link.disabled:focus,
-.project-live-link[disabled]:focus,
-fieldset[disabled] .project-live-link:focus,
-.project-live-link.disabled.focus,
-.project-live-link[disabled].focus,
-fieldset[disabled] .project-live-link.focus {
+.project .project-live-link.disabled:hover,
+.project .project-live-link[disabled]:hover,
+fieldset[disabled] .project .project-live-link:hover,
+.project .project-live-link.disabled:focus,
+.project .project-live-link[disabled]:focus,
+fieldset[disabled] .project .project-live-link:focus,
+.project .project-live-link.disabled.focus,
+.project .project-live-link[disabled].focus,
+fieldset[disabled] .project .project-live-link.focus {
   background-color: #2c3e50;
   border-color: #2c3e50;
 }
-.project-live-link .badge {
+.project .project-live-link .badge {
   color: #2c3e50;
   background-color: #ffffff;
+}
+.project-screenshot {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 #contact {
   text-align: center;
