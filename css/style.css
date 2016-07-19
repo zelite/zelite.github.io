@@ -5017,6 +5017,12 @@ nav ul > li > a {
 @media (min-width: 768px) {
   .project {
     float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .project {
+    float: left;
     width: 25%;
   }
 }
