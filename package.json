@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/zelite/zelite.github.io/issues"
   },
-  "homepage": "https://github.com/zelite/zelite.github.io#readme",
+  "homepage": "https://zelite.github.io",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
