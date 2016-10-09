@@ -1,10 +1,11 @@
-@import "bootstrap/bootstrap.less";
+@import "bootstrap/mybootstrap.less";
 
 html, body {
   /*necesarry for header to have height 100% of viewport*/
   margin:0;
   padding:0;
   height:100%;
+  background-color: @gray-lighter;
 }
 
 .nav-target{
@@ -51,9 +52,11 @@ section{
 }
 
 .section-content{
-  .make-lg-column(12);
   text-align: center;
+  
 }
+
+
 
 #about-me{
   margin-top: 25px;
@@ -63,9 +66,12 @@ section{
   .make-lg-column-offset(3);
 }
 
+
 .projects-category{
   .make-row();
   overflow: hidden;
+  .center-block();
+  
 }
 
 .project{
@@ -77,21 +83,28 @@ section{
   /*negative margins for equal height columns*/
   margin-bottom: -99999px;
   padding-bottom: 99999px;
+  max-width: 400px;
+  .center-block();
+}
+
+.project-caption{
+  background-color: @body-bg;
 }
 
 .project-title{
-  margin: 10px;
+  .h4();
+  margin-top: 0;
+  padding-top: 10px;
 }
 
 .project-details{
-  margin: 10px;
   font-style: italic;
+  padding-bottom: 10px;
 }
 
 .project-image{
   position: relative;
-  max-width: 400px;
-  .center-block();
+  
 }
 
 
@@ -105,6 +118,10 @@ section{
 }
 
 .project-hover:hover{
+  opacity: 1;
+}
+
+.project-hover:focus{
   opacity: 1;
 }
 
@@ -134,11 +151,21 @@ section{
   .btn-link();
 }
 
+#contact{
+  background-color: @alert-info-bg;
+  color: @alert-info-text;
+  a{
+    color: inherit;
+  }
+  
+}
+
 .contact-logo{
   display: inline-block;
-  max-width: 80px;
+  
   img{
-    .img-responsive();
+    width: 100%;
+    max-width: 80px;
     .img-circle();
   }
   &:hover{transform: scale(1.1)}
