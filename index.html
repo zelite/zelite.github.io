@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="images/portfolio_ogimage.jpg" />
     <title>Portfolio Page</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+
+    <link href="https://fonts.googleapis.com/css?family=Domine|Raleway:700|Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,33 +25,33 @@
         <div class="navbar-collapse collapse" id="bl-navbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
     <header id="start">
         <div class="header-content">
-            <h1 id="about" class="header-title nav-target">My Portfolio</h1>
+            <h1 id="about" class="header-title nav-target">Hi, I'm José</h1>
             <div class="header-roles">Developer - Data Analyst - Biological Engineer</div>
             <section>
                 <div id="about-me" class="section-content">
                     <p>
-                        I'm José and I live in Germany. I have a MSc. in Biological
+                        I live in Germany, have a MSc. in Biological
                         Engineering and a knack for programming. I use Python and R
-                        to wrangle, visualize and analyse data. With my passion for
+                        to wrangle, visualize and analyse data on my daily work. With my passion for
                         programming comes the insatiable desire to learn. Here is my portofolio
                         where I showcase my adventures in the programming world.
                     </p>
                 </div>
             </section>
-            <a class="btn-default btn btn-xl more-button" href="#portfolio">Look at the projects</a>
+            <a class="btn-primary btn btn-xl more-button" href="#projects">Look at the projects</a>
         </div>
     </header>
     <main>
-    <section id="portfolio" class="nav-target">
+    <section id="projects" class="nav-target">
       <div class="section-content">
-        <h1>Portfolio</h1>
+        <h1>Projects</h1>
         <div class="projects-category">
             <h2>Developer</h2>
             <div class="project">
@@ -145,7 +146,7 @@
         </div>
         <div class="more-projects">
           <button type="button" class="more-projects-link" data-toggle="modal" data-target="#developer-projects-table">
-            All Developer Projects...
+            More Developer Projects...
           </button>
         </div>
         <div class="projects-category">
@@ -242,7 +243,7 @@
         </div>
         <div class="more-projects">
           <button type="button" class="more-projects-link" data-toggle="modal" data-target="#dataanalyst-projects-table">
-            All Data Analyst Projects...
+            More Data Analyst Projects...
           </button>
         </div>
         <div class="projects-category">
@@ -434,6 +435,24 @@
         $('.nav a').click(function() {
             $('.collapse').collapse('hide');
         });
+  // Fix background image jump on mobile http://stackoverflow.com/a/31330874/1952996
+  $(function(){
+
+    var $w = $(window),
+        $background = $('#start');
+
+    // Fix background image jump on mobile
+    if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+      $background.css({'top': 'auto', 'bottom': 0});
+
+      $w.resize(sizeBackground);
+      sizeBackground();
+    }
+
+    function sizeBackground() {
+       $background.height(screen.height);
+    }
+  });
     </script>
 </body>
 

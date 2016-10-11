@@ -1072,7 +1072,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Domine", "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
@@ -4809,7 +4809,7 @@ a.thumbnail.active {
   font-weight: bold;
   line-height: 1;
   color: #ffffff;
-  text-shadow: 0 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #fff;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
@@ -5258,14 +5258,14 @@ section:after,
 }
 html,
 body {
-  /*necesarry for header to have height 100% of viewport*/
+  /*necesary for header to have height 100% of viewport*/
   margin: 0;
   padding: 0;
   height: 100%;
   background-color: #eeeeee;
 }
 .nav-target {
-  padding-top: 50px;
+  padding-top: 65px;
 }
 .navbar-right {
   padding-right: 25px;
@@ -5281,18 +5281,63 @@ header {
 .header-content {
   display: table-cell;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   color: white;
 }
 .header-title {
-  font-size: 5rem;
-  text-transform: uppercase;
+  font-size: 3rem;
+  /*text-transform: uppercase;*/
 }
 .header-roles {
-  font-size: 2rem;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-size: 20px;
+}
+.header-roles small,
+.header-roles .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #b3b3b3;
+}
+.header-roles small,
+.header-roles .small {
+  font-size: 75%;
+}
+@media (min-width: 425px) {
+  .header-content {
+    vertical-align: middle;
+  }
+  .header-title {
+    font-size: 5rem;
+    /*text-transform: uppercase;*/
+  }
+  .header-roles {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 22px;
+    margin-bottom: 11px;
+    font-size: 28px;
+  }
+  .header-roles small,
+  .header-roles .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #b3b3b3;
+  }
+  .header-roles small,
+  .header-roles .small {
+    font-size: 65%;
+  }
 }
 .more-button {
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 section {
   margin-right: auto;
@@ -5357,6 +5402,14 @@ section > .navbar-collapse {
 @media (min-width: 1200px) {
   #about-me {
     margin-left: 25%;
+  }
+}
+#projects {
+  max-width: 750px;
+}
+@media (min-width: 1200px) {
+  #projects {
+    max-width: none;
   }
 }
 .projects-category {
